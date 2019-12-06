@@ -6,7 +6,7 @@ import './App.css';
 class App extends React.Component {
 
     componentDidMount() {
-        window.location.replace("http://setlife.network");
+        window.location.replace("https://www.setlife.network");
     }
 
     render() {

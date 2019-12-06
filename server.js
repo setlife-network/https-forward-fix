@@ -9,6 +9,9 @@ var port = isProduction ? process.env.PORT : 4000;
 app.use(express.static(__dirname + '/build'));
 
 app.get('*', function (req, res, next) {
+    console.log('req: ')
+    console.log(req)
+
     // Prevents an HTML response for API calls
     if (req.path.indexOf('/api/') != -1) {
         return next();
